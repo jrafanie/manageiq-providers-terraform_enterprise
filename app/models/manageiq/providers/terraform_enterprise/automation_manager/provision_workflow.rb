@@ -6,4 +6,8 @@ class ManageIQ::Providers::TerraformEnterprise::AutomationManager::ProvisionWork
   def validate(*)
     true
   end
+
+  def dialog_name_from_automate(message = 'get_dialog_name', input_fields = [:request_type], extra_attrs = {'platform_category' => 'terraform_enterprise'})
+    super
+  end
 end
